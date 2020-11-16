@@ -1,0 +1,11 @@
+syntax = "proto3";
+package in.statelogic.grpc;
+option java_multiple_files = true;
+
+message TataSkyCmdRequest {
+  uint32 deviceId = 1;
+  repeated uint32 cmds = 2;
+  repeated string params = 3;
+  uint32 repeat = 4;
+  uint32 delay = 5;
+}

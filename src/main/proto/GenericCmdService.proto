@@ -1,0 +1,11 @@
+syntax = "proto3";
+package in.statelogic.grpc;
+
+import "GenericCmdRequest.proto";
+import "CmdResponse.proto";
+
+option java_multiple_files = true;
+
+service GenericCommandService {
+  rpc PostCommand(GenericCmdRequest) returns (CmdResponse);
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+package in.statelogic.grpc;
+
+import "TataSkyCmdRequest.proto";
+import "CmdResponse.proto";
+
+option java_multiple_files = true;
+
+service TataSkyCommandService {
+  rpc PostCommand(TataSkyCmdRequest) returns (CmdResponse);
+}
