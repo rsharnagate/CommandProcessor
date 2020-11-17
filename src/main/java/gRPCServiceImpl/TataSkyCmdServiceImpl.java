@@ -11,7 +11,7 @@ public class TataSkyCmdServiceImpl extends TataSkyCommandServiceGrpc.TataSkyComm
         try {
 
         } catch (Exception ex) {
-
+            ex.printStackTrace(System.err);
         }
     }
 }
