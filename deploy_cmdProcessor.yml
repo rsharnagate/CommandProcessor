@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cmdProcessor
+  labels:
+    app: cmdProcessor
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cmdProcessor
+  template:
+    metadata:
+      labels:
+        app: cmdProcessor
+    spec:
+      containers:
+      - name: cmdProcessor
+        image: rsharnagate/cmdprocessor:rpi
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 51000      
