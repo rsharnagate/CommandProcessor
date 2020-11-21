@@ -19,4 +19,4 @@ spec:
         image: rsharnagate/cmdprocessor:rpi
         imagePullPolicy: Always
         ports:
-        - containerPort: 51000      
+        - containerPort: 51000
